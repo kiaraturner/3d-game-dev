@@ -15,6 +15,8 @@ public class MouseLook : MonoBehaviour
     private void Awake()
     {
         character = transform.parent; // refs to parent control
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
 
