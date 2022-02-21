@@ -201,8 +201,8 @@ MonoBehaviour:
   parents:
   - {fileID: 981201249}
   children:
-  - {fileID: 837193112}
   - {fileID: 1818412386}
+  - {fileID: 837193112}
 --- !u!4 &345745175
 Transform:
   m_ObjectHideFlags: 0
@@ -412,7 +412,6 @@ GameObject:
   m_Component:
   - component: {fileID: 981201250}
   - component: {fileID: 981201249}
-  - component: {fileID: 981201251}
   m_Layer: 0
   m_Name: Node
   m_TagString: Untagged
@@ -450,20 +449,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &981201251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981201248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 525a806340daadc489e17e41b4f9d50e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rootNode: {fileID: 981201249}
-  target: {fileID: 1818412386}
 --- !u!1 &1252951397
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +461,7 @@ GameObject:
   - component: {fileID: 1252951399}
   - component: {fileID: 1252951398}
   - component: {fileID: 1252951401}
+  - component: {fileID: 1252951402}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -555,13 +541,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1252951397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 525a806340daadc489e17e41b4f9d50e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rootNode: {fileID: 0}
   target: {fileID: 0}
+--- !u!114 &1252951402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252951397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb8c85c605dad44c9b491324b73efe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rootNode: {fileID: 981201249}
+  target: {fileID: 837193112}
 --- !u!1 &1818412385
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,8 +640,8 @@ MonoBehaviour:
   parents:
   - {fileID: 981201249}
   children:
-  - {fileID: 177047107}
   - {fileID: 432754871}
+  - {fileID: 177047107}
 --- !u!4 &1922761705
 Transform:
   m_ObjectHideFlags: 0

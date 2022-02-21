@@ -59,8 +59,12 @@
     <Compile Include="Assets\Kick.cs" />
     <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\ObjectTeleport.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\OOP.cs" />
     <Compile Include="Assets\car.cs" />
+=======
+    <Compile Include="Assets\BredthFirstSearch.cs" />
+>>>>>>> 5b42e384da8b7947b0bb0094e89acb4715f922e7
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
