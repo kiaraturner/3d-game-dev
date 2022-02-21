@@ -11,11 +11,22 @@ public class Health : MonoBehaviour
 
     private float currentHealth = 0;
     
+    public static Health Instance { get; private set; }
 
+    private void Awake()
+    {
+        //sety singleton value <3
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            enabled = false;
+        }
+    }
 
-
-
-// Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
 {
     currentHealth = maxHealth;
