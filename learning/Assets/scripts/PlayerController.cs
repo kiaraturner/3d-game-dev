@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public float gravity = 3.5f;
     public float speed = 2f;
+    [Range(0.1f,1f)]
     public float crouchSpeedMultiplier = 0.5f;
     public float jumpForce = 0.5f;
 
